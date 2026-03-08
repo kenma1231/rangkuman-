@@ -416,30 +416,30 @@ document.write(`
 <section id="spl-sistem-persamaan-linear">
 <h1>1. SPL (Sistem Persamaan Linear)<a class="headerlink" href="#spl-sistem-persamaan-linear" title="Link to this heading">#</a></h1>
 <div class="math notranslate nohighlight">
-\[
+\[\begin{split}
 \begin{cases}
-x_1 + x_2 + x_3 + x_4 + x_5 = 15 \
-2x_1 + x_2 + x_3 + x_4 + x_5 = 16 \
-x_1 + 2x_2 + x_3 + x_4 + x_5 = 16 \
-x_1 + x_2 + 2x_3 + x_4 + x_5 = 17 \
+x_1 + x_2 + x_3 + x_4 + x_5 = 15 \\
+2x_1 + x_2 + x_3 + x_4 + x_5 = 16 \\
+x_1 + 2x_2 + x_3 + x_4 + x_5 = 16 \\
+x_1 + x_2 + 2x_3 + x_4 + x_5 = 17 \\
 x_1 + x_2 + x_3 + 2x_4 + x_5 = 18
 \end{cases}
-\]</div>
+\end{split}\]</div>
 </section>
 <section id="matriks-augmented">
 <h1>2. Matriks Augmented<a class="headerlink" href="#matriks-augmented" title="Link to this heading">#</a></h1>
 <div class="math notranslate nohighlight">
-\[
+\[\begin{split}
 \left[
 \begin{array}{ccccc|c}
-1 &amp; 1 &amp; 1 &amp; 1 &amp; 1 &amp; 15 \
-2 &amp; 1 &amp; 1 &amp; 1 &amp; 1 &amp; 16 \
-1 &amp; 2 &amp; 1 &amp; 1 &amp; 1 &amp; 16 \
-1 &amp; 1 &amp; 2 &amp; 1 &amp; 1 &amp; 17 \
+1 &amp; 1 &amp; 1 &amp; 1 &amp; 1 &amp; 15 \\
+2 &amp; 1 &amp; 1 &amp; 1 &amp; 1 &amp; 16 \\
+1 &amp; 2 &amp; 1 &amp; 1 &amp; 1 &amp; 16 \\
+1 &amp; 1 &amp; 2 &amp; 1 &amp; 1 &amp; 17 \\
 1 &amp; 1 &amp; 1 &amp; 2 &amp; 1 &amp; 18
 \end{array}
 \right]
-\]</div>
+\end{split}\]</div>
 </section>
 <section id="eliminasi-gauss-obe">
 <h1>3. Eliminasi Gauss (OBE)<a class="headerlink" href="#eliminasi-gauss-obe" title="Link to this heading">#</a></h1>
@@ -452,89 +452,73 @@ R₃ → R₃ − R₁
 R₄ → R₄ − R₁
 R₅ → R₅ − R₁</p>
 <div class="math notranslate nohighlight">
-\[
+\[\begin{split}
 \left[
 \begin{array}{ccccc|c}
-1 &amp; 1 &amp; 1 &amp; 1 &amp; 1 &amp; 15 \
-0 &amp; -1 &amp; -1 &amp; -1 &amp; -1 &amp; -14 \
-0 &amp; 1 &amp; 0 &amp; 0 &amp; 0 &amp; 1 \
-0 &amp; 0 &amp; 1 &amp; 0 &amp; 0 &amp; 2 \
+1 &amp; 1 &amp; 1 &amp; 1 &amp; 1 &amp; 15 \\
+0 &amp; -1 &amp; -1 &amp; -1 &amp; -1 &amp; -14 \\
+0 &amp; 1 &amp; 0 &amp; 0 &amp; 0 &amp; 1 \\
+0 &amp; 0 &amp; 1 &amp; 0 &amp; 0 &amp; 2 \\
 0 &amp; 0 &amp; 0 &amp; 1 &amp; 0 &amp; 3
 \end{array}
 \right]
-\]</div>
+\end{split}\]</div>
 </section>
 <section class="tex2jax_ignore mathjax_ignore" id="langkah-2-nolkan-elemen-di-bawah-pivot-kolom-2">
 <h1>Langkah 2. Nolkan elemen di bawah pivot kolom 2<a class="headerlink" href="#langkah-2-nolkan-elemen-di-bawah-pivot-kolom-2" title="Link to this heading">#</a></h1>
 <p>Operasi baris
 R₃ → R₃ + R₂</p>
 <div class="math notranslate nohighlight">
-\[
+\[\begin{split}
 \left[
 \begin{array}{ccccc|c}
-1 &amp; 1 &amp; 1 &amp; 1 &amp; 1 &amp; 15 \
-0 &amp; -1 &amp; -1 &amp; -1 &amp; -1 &amp; -14 \
-0 &amp; 0 &amp; -1 &amp; -1 &amp; -1 &amp; -13 \
-0 &amp; 0 &amp; 1 &amp; 0 &amp; 0 &amp; 2 \
+1 &amp; 1 &amp; 1 &amp; 1 &amp; 1 &amp; 15 \\
+0 &amp; -1 &amp; -1 &amp; -1 &amp; -1 &amp; -14 \\
+0 &amp; 0 &amp; -1 &amp; -1 &amp; -1 &amp; -13 \\
+0 &amp; 0 &amp; 1 &amp; 0 &amp; 0 &amp; 2 \\
 0 &amp; 0 &amp; 0 &amp; 1 &amp; 0 &amp; 3
 \end{array}
 \right]
-\]</div>
+\end{split}\]</div>
 </section>
 <section class="tex2jax_ignore mathjax_ignore" id="langkah-3-nolkan-elemen-di-bawah-pivot-kolom-3">
 <h1>Langkah 3. Nolkan elemen di bawah pivot kolom 3<a class="headerlink" href="#langkah-3-nolkan-elemen-di-bawah-pivot-kolom-3" title="Link to this heading">#</a></h1>
 <p>Operasi baris
 R₄ → R₄ + R₃</p>
 <div class="math notranslate nohighlight">
-\[
+\[\begin{split}
 \left[
 \begin{array}{ccccc|c}
-1 &amp; 1 &amp; 1 &amp; 1 &amp; 1 &amp; 15 \
-0 &amp; -1 &amp; -1 &amp; -1 &amp; -1 &amp; -14 \
-0 &amp; 0 &amp; -1 &amp; -1 &amp; -1 &amp; -13 \
-0 &amp; 0 &amp; 0 &amp; -1 &amp; -1 &amp; -11 \
+1 &amp; 1 &amp; 1 &amp; 1 &amp; 1 &amp; 15 \\
+0 &amp; -1 &amp; -1 &amp; -1 &amp; -1 &amp; -14 \\
+0 &amp; 0 &amp; -1 &amp; -1 &amp; -1 &amp; -13 \\
+0 &amp; 0 &amp; 0 &amp; -1 &amp; -1 &amp; -11 \\
 0 &amp; 0 &amp; 0 &amp; 1 &amp; 0 &amp; 3
 \end{array}
 \right]
-\]</div>
+\end{split}\]</div>
 </section>
 <section class="tex2jax_ignore mathjax_ignore" id="langkah-4-nolkan-elemen-di-bawah-pivot-kolom-4">
 <h1>Langkah 4. Nolkan elemen di bawah pivot kolom 4<a class="headerlink" href="#langkah-4-nolkan-elemen-di-bawah-pivot-kolom-4" title="Link to this heading">#</a></h1>
 <p>Operasi baris
 R₅ → R₅ + R₄</p>
 <div class="math notranslate nohighlight">
-\[
+\[\begin{split}
 \left[
 \begin{array}{ccccc|c}
-1 &amp; 1 &amp; 1 &amp; 1 &amp; 1 &amp; 15 \
-0 &amp; -1 &amp; -1 &amp; -1 &amp; -1 &amp; -14 \
-0 &amp; 0 &amp; -1 &amp; -1 &amp; -1 &amp; -13 \
-0 &amp; 0 &amp; 0 &amp; -1 &amp; -1 &amp; -11 \
+1 &amp; 1 &amp; 1 &amp; 1 &amp; 1 &amp; 15 \\
+0 &amp; -1 &amp; -1 &amp; -1 &amp; -1 &amp; -14 \\
+0 &amp; 0 &amp; -1 &amp; -1 &amp; -1 &amp; -13 \\
+0 &amp; 0 &amp; 0 &amp; -1 &amp; -1 &amp; -11 \\
 0 &amp; 0 &amp; 0 &amp; 0 &amp; -1 &amp; -8
 \end{array}
 \right]
-\]</div>
+\end{split}\]</div>
 <section id="hasil-akhir">
 <h2>4. Hasil Akhir<a class="headerlink" href="#hasil-akhir" title="Link to this heading">#</a></h2>
 <div class="math notranslate nohighlight">
 \[
-x_1 = 1
-\]</div>
-<div class="math notranslate nohighlight">
-\[
-x_2 = 2
-\]</div>
-<div class="math notranslate nohighlight">
-\[
-x_3 = 3
-\]</div>
-<div class="math notranslate nohighlight">
-\[
-x_4 = 4
-\]</div>
-<div class="math notranslate nohighlight">
-\[
-x_5 = 5
+x_1 = 1,\quad x_2 = 2,\quad x_3 = 3,\quad x_4 = 4,\quad x_5 = 5
 \]</div>
 </section>
 </section>
