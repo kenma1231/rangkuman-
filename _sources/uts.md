@@ -145,7 +145,7 @@ $$
 $$
 
 
-# hasil ahir 
+
 $$
 \text{Langkah 8: } R_4 = \tfrac{4}{5}R_4 \quad
 $$
@@ -260,8 +260,86 @@ $$
 \right]
 $$
 
+# hasil ahir 
+
 $$
 x_1=1,\; x_2=2,\; x_3=3,\; x_4=4,\; x_5=5
+$$
+
+# determinan 
+Matriks koefisien A:
+
+$$
+A =
+\begin{bmatrix}
+2 & 1 & 0 & 0 & 0 \\
+1 & 2 & 1 & 0 & 0 \\
+0 & 1 & 2 & 1 & 0 \\
+0 & 0 & 1 & 2 & 1 \\
+0 & 0 & 0 & 1 & 2
+\end{bmatrix}
+$$
+
+Langkah 1  
+$R_2 = R_2 - \tfrac{1}{2}R_1$
+
+$$
+\begin{bmatrix}
+2 & 1 & 0 & 0 & 0 \\
+0 & \tfrac{3}{2} & 1 & 0 & 0 \\
+0 & 1 & 2 & 1 & 0 \\
+0 & 0 & 1 & 2 & 1 \\
+0 & 0 & 0 & 1 & 2
+\end{bmatrix}
+$$
+
+Langkah 2  
+$R_3 = R_3 - \tfrac{2}{3}R_2$
+
+$$
+\begin{bmatrix}
+2 & 1 & 0 & 0 & 0 \\
+0 & \tfrac{3}{2} & 1 & 0 & 0 \\
+0 & 0 & \tfrac{4}{3} & 1 & 0 \\
+0 & 0 & 1 & 2 & 1 \\
+0 & 0 & 0 & 1 & 2
+\end{bmatrix}
+$$
+
+Langkah 3  
+$R_4 = R_4 - \tfrac{3}{4}R_3$
+
+$$
+\begin{bmatrix}
+2 & 1 & 0 & 0 & 0 \\
+0 & \tfrac{3}{2} & 1 & 0 & 0 \\
+0 & 0 & \tfrac{4}{3} & 1 & 0 \\
+0 & 0 & 0 & \tfrac{5}{4} & 1 \\
+0 & 0 & 0 & 1 & 2
+\end{bmatrix}
+$$
+
+Langkah 4  
+$R_5 = R_5 - \tfrac{4}{5}R_4$
+
+$$
+\begin{bmatrix}
+2 & 1 & 0 & 0 & 0 \\
+0 & \tfrac{3}{2} & 1 & 0 & 0 \\
+0 & 0 & \tfrac{4}{3} & 1 & 0 \\
+0 & 0 & 0 & \tfrac{5}{4} & 1 \\
+0 & 0 & 0 & 0 & \tfrac{6}{5}
+\end{bmatrix}
+$$
+
+Determinan:
+
+$$
+\det(A) = 2 \times \tfrac{3}{2} \times \tfrac{4}{3} \times \tfrac{5}{4} \times \tfrac{6}{5}
+$$
+
+$$
+\det(A) = 6
 $$
 
 # adjoin

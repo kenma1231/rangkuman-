@@ -389,6 +389,7 @@ document.write(`
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#matrix-augmented">2.Matrix Augmented</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#eleminasi-gauss">3.Eleminasi gauss</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#hasil-ahir">hasil ahir</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#determinan">determinan</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#adjoin">adjoin</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#inves">inves</a></li>
 </ul>
@@ -549,9 +550,6 @@ x_4 + 2x_5 = 14
 \end{array}
 \right]
 \end{split}\]</div>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="hasil-ahir">
-<h1>hasil ahir<a class="headerlink" href="#hasil-ahir" title="Link to this heading">#</a></h1>
 <div class="math notranslate nohighlight">
 \[
 \text{Langkah 8: } R_4 = \tfrac{4}{5}R_4 \quad
@@ -665,9 +663,84 @@ x_4 + 2x_5 = 14
 \end{array}
 \right]
 \end{split}\]</div>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="hasil-ahir">
+<h1>hasil ahir<a class="headerlink" href="#hasil-ahir" title="Link to this heading">#</a></h1>
 <div class="math notranslate nohighlight">
 \[
 x_1=1,\; x_2=2,\; x_3=3,\; x_4=4,\; x_5=5
+\]</div>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="determinan">
+<h1>determinan<a class="headerlink" href="#determinan" title="Link to this heading">#</a></h1>
+<p>Matriks koefisien A:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+A =
+\begin{bmatrix}
+2 &amp; 1 &amp; 0 &amp; 0 &amp; 0 \\
+1 &amp; 2 &amp; 1 &amp; 0 &amp; 0 \\
+0 &amp; 1 &amp; 2 &amp; 1 &amp; 0 \\
+0 &amp; 0 &amp; 1 &amp; 2 &amp; 1 \\
+0 &amp; 0 &amp; 0 &amp; 1 &amp; 2
+\end{bmatrix}
+\end{split}\]</div>
+<p>Langkah 1<br />
+<span class="math notranslate nohighlight">\(R_2 = R_2 - \tfrac{1}{2}R_1\)</span></p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{bmatrix}
+2 &amp; 1 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; \tfrac{3}{2} &amp; 1 &amp; 0 &amp; 0 \\
+0 &amp; 1 &amp; 2 &amp; 1 &amp; 0 \\
+0 &amp; 0 &amp; 1 &amp; 2 &amp; 1 \\
+0 &amp; 0 &amp; 0 &amp; 1 &amp; 2
+\end{bmatrix}
+\end{split}\]</div>
+<p>Langkah 2<br />
+<span class="math notranslate nohighlight">\(R_3 = R_3 - \tfrac{2}{3}R_2\)</span></p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{bmatrix}
+2 &amp; 1 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; \tfrac{3}{2} &amp; 1 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; \tfrac{4}{3} &amp; 1 &amp; 0 \\
+0 &amp; 0 &amp; 1 &amp; 2 &amp; 1 \\
+0 &amp; 0 &amp; 0 &amp; 1 &amp; 2
+\end{bmatrix}
+\end{split}\]</div>
+<p>Langkah 3<br />
+<span class="math notranslate nohighlight">\(R_4 = R_4 - \tfrac{3}{4}R_3\)</span></p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{bmatrix}
+2 &amp; 1 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; \tfrac{3}{2} &amp; 1 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; \tfrac{4}{3} &amp; 1 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; \tfrac{5}{4} &amp; 1 \\
+0 &amp; 0 &amp; 0 &amp; 1 &amp; 2
+\end{bmatrix}
+\end{split}\]</div>
+<p>Langkah 4<br />
+<span class="math notranslate nohighlight">\(R_5 = R_5 - \tfrac{4}{5}R_4\)</span></p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{bmatrix}
+2 &amp; 1 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; \tfrac{3}{2} &amp; 1 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; \tfrac{4}{3} &amp; 1 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; \tfrac{5}{4} &amp; 1 \\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; \tfrac{6}{5}
+\end{bmatrix}
+\end{split}\]</div>
+<p>Determinan:</p>
+<div class="math notranslate nohighlight">
+\[
+\det(A) = 2 \times \tfrac{3}{2} \times \tfrac{4}{3} \times \tfrac{5}{4} \times \tfrac{6}{5}
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+\det(A) = 6
 \]</div>
 </section>
 <section class="tex2jax_ignore mathjax_ignore" id="adjoin">
@@ -860,6 +933,7 @@ A^{-1} =
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#matrix-augmented">2.Matrix Augmented</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#eleminasi-gauss">3.Eleminasi gauss</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#hasil-ahir">hasil ahir</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#determinan">determinan</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#adjoin">adjoin</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#inves">inves</a></li>
 </ul>
