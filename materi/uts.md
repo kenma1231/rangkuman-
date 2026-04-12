@@ -5,13 +5,11 @@
 sistem persamaan linier dengan 5 variabel
 
 $$
-\begin{aligned}
-2x_1 + x_2 &= 4 \\
-x_1 + 2x_2 + x_3 &= 8 \\
-x_2 + 2x_3 + x_4 &= 12 \\
-x_3 + 2x_4 + x_5 &= 16 \\
-x_4 + 2x_5 &= 14
-\end{aligned}
+2x_1 + x_2 = 4 \\
+x_1 + 2x_2 + x_3 = 8 \\
+x_2 + 2x_3 + x_4 = 12 \\
+x_3 + 2x_4 + x_5 = 16 \\
+x_4 + 2x_5 = 14
 $$
 
 # 2.Matrix Augmented
